@@ -1,0 +1,28 @@
+.deptHead{
+    margin-top: 50px;
+}
+.navkit{
+    padding: 0px 20px;
+}
+.quskit{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+}
+.text-style{
+    text-align: justify;
+
+}
+.table{
+    border: solid 1px;
+}
+.table img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.nameStyle{
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}

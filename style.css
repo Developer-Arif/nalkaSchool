@@ -1,0 +1,271 @@
+.btnLogin{
+    border-radius: 40px;
+    width: 90px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+.carousel-indicators li{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+}
+hr{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.noticeRow{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    background-color: aqua;
+}
+.notices{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.noticeRow{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    background-color: aqua;
+}
+.notices{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.card-body{
+   width: fit-content;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 0 lightgray; 
+}
+.card:hover{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 0 gray;
+}
+.dept-body{
+    width: 500px;
+}
+.footer-style{
+    background-color: rgb(24, 38, 63);
+    margin-top: 25px;
+}
+.footertext{
+    margin-top: 15px;
+}
+.textcolor{
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    color: white;
+}
+ul li:hover{
+  color: teal;
+  margin-left: 10px;
+}
+.footer-bottom{
+  margin-top: 20px;
+}
+.tCard{
+  margin-bottom: 100px;
+}
+.livetext{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-style{
+    text-align: justify;
+
+}
+.eventCard{
+    padding:  35px;
+}
+
+.eventsTitle{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.ourSchool{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.ourSchool img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border: solid 2px;
+    width: 100%;
+    
+    padding-bottom: 20px;
+}
+.Pmessage{
+    margin-top: 50px;
+}
+.messagetitle{
+    margin-top: 20px;
+    text-align: center;
+}
+.schooltitle{
+    margin-bottom: 45px;
+}
+.messageboby{
+    margin-top: 50px;
+}
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img{
+    width: 250px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .teacherCarousel .active.col-md-4.tItem + .tItem + .tItem + .tItem {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .teacherCarousel .active.col-sm-6.tItem + .tItem + .tItem {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .tItem {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .teacherCarousel .active + .tItem {
+        display: block;
+    }
+    .teacherCarousel .tItem.active:not(.tItem-right):not(.tItem-left),
+    .teacherCarousel .tItem.active:not(.tItem-right):not(.tItem-left) + .tItem {
+        transition: none;
+    }
+    .teacherCarousel .tItem-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.tItem-left + .tItem-next.tItem-left,
+    .tItem-next.tItem-left + .tItem,
+    .tItem-next.tItem-left + .tItem + .tItem {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .teacherCarousel .tItem-prev.tItem-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.tItem-right + .tItem-prev.tItem-right,
+    .tItem-prev.tItem-right + .tItem,
+    .tItem-prev.tItem-right + .tItem + .tItem {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .teacherCarousel .active + .tItem + .tItem {
+        display: block;
+    }
+    .teacherCarousel .tItem.active:not(.tItem-right):not(.tItem-left) + .tItem + .tItem {
+        transition: none;
+    }
+    .teacherCarousel .tItem-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .tItem-next.tItem-left + .tItem + .tItem + .tItem {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .tItem-prev.tItem-right + .tItem + .tItem + .tItem {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .teacherCarousel .active + .tItem + .tItem + .tItem {
+        display: block;
+    }
+    .teacherCarousel .tItem.active:not(.tItem-right):not(.tItem-left) + .tItem + .tItem + .tItem {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .teacherCarousel .active.col-lg-3.tItem + .tItem + .tItem + .tItem + .tItem {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .tItem-next.tItem-left + .tItem + .tItem + .tItem + .tItem {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .tItem-prev.tItem-right + .tItem + .tItem + .tItem + .tItem  {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+
+
+
+ 
